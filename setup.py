@@ -8,10 +8,11 @@ setup(
   author = 'Seid Muhie Yimam',                   # Type in your name
   author_email = 'seid.muhie.yimam@uni-hamburg.de',      # Type in your E-Mail
   url = 'seyyaw.github.io/',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/uhh-lt/amharicmodels/tree/master/amharicprocessor',    # I explain this later on
+  download_url = 'https://github.com/uhh-lt/amharicprocessor/archive/refs/tags/v_01.tar.gz',    # I explain this later on
   keywords = ['Amharic', 'Amharic sentence splitter', 'Amharic document normalizer'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
           'validators',
+          'flair',
           'beautifulsoup4',
       ],
   classifiers=[
