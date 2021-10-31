@@ -73,7 +73,7 @@ class AmharicSegmenter:
     # apply sentence tokenization
     def window_lines(self, line, window):
         '''
-        Some models require the length of the sentence to be moderate, so to avvoid sgorter sentences, append some using some windowing technique
+        Some models require the length of the sentence to be moderate, so to avvoid shorter sentences, append some using some windowing technique
         '''
         try:
             text = re.sub("\s+", " ",line)
