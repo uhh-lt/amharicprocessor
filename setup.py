@@ -12,7 +12,6 @@ setup(
   keywords = ['Amharic', 'Amharic sentence splitter', 'Amharic document normalizer'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
           'validators',
-          'flair',
           'beautifulsoup4',
       ],
   classifiers=[
