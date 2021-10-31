@@ -5,6 +5,11 @@ If you find an issue, please let us know in the GitHub [Issues](https://github.c
 
 The Segmenter is part of the `Semantic Models for Amharic` Project
  [![](https://github.com/uhh-lt/amharicmodels/raw/master/logo.png)](https://github.com/uhh-lt/amharicmodels/)
+ 
+ # Usage
+ * Install the segmenter: `pip install amseg`
+ * Import the package in your project
+ -  Segmenter imp
 
 # Announcements 
 
