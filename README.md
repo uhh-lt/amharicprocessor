@@ -11,19 +11,31 @@ The Segmenter is part of the `Semantic Models for Amharic` Project
  
  ## Tokenization and Segmentation
   
- ```from amseg.amharicSegmenter import AmharicSegmenter
-  sent_punct = []
-  word_punct = []
-  segmenter = AmharicSegmenter(sent_punct,word_punct)
-  words = segmenter.amharic_tokenizer("እአበበ በሶ በላ።")
-  sentences = segmenter.t("እአበበ በሶ በላ። ከበደ ጆንያ፤ ተሸከመ፡!ለምን?"))
+ ```
+from amseg.amharicSegmenter import AmharicSegmenter
+sent_punct = []
+word_punct = []
+segmenter = AmharicSegmenter(sent_punct,word_punct)
+words = segmenter.amharic_tokenizer("እአበበ በሶ በላ።")
+sentences = segmenter.t("እአበበ በሶ በላ። ከበደ ጆንያ፤ ተሸከመ፡!ለምን?"))
   ```
+  Outputs
+
+  > words = ['እአበበ', 'በሶ', 'በላ', '።']
+  > sentences = ['እአበበ በሶ በላ።', 'ከበደ ጆንያ፤ ተሸከመ፡!', 'ለምን?']
 
   ## Romanization and Normalization
 
-  
+  ```
+from amseg.amharicNormalizer import AmharicNormalizer as normalizer
+from amseg.amharicRomanizer import AmharicRomanizer as romanizer
+normalized = normalizer.normalize('ሑለት ሦስት')
+romanized = romanizer.romanize('ሑለት ሦስት')
+```
 
-
+Outputs
+> normalized = 'ሁለት ሶስት'
+> romanized = 'ḥulat śosət'
 
 
 # Announcements 
