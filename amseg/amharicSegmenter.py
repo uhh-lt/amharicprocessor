@@ -1,6 +1,5 @@
 import re
 from typing import List
-from flair.data import Token
 
 class AmharicSegmenter:
     SENT_PUNC =  []
@@ -15,11 +14,11 @@ class AmharicSegmenter:
         else:
             self.WORD_PUNC =  ["።","፥","፤","፨","?","!",":","፡","፦","፣"]
             
-    def amharic_tokenizer(self, text: str) -> List[Token]:
+    def amharic_tokenizer(self, text: str):
         """
         Tokenizer based on space character and different Amharic punctuation marksonly.
         """
-        tokens: List[Token] = []
+        tokens = []
         word = ""
         index = -1
         previchar = ''
@@ -27,21 +26,13 @@ class AmharicSegmenter:
             if char == " ":
                 if len(word) > 0:
                     start_position = index - len(word)
-                    tokens.append(
-                        Token(
-                            text=word, start_position=start_position, whitespace_after=True
-                        )
-                    )
+                    tokens.append(word)
 
                 word = ""
             elif char in self.WORD_PUNC:
                 if len(word) > 0 and previchar != char:
                     start_position = index - len(word)
-                    tokens.append(
-                        Token(
-                            text=word, start_position=start_position, whitespace_after=True
-                        )
-                    )
+                    tokens.append(word)
                     word = ""
                 previchar = char
                 word += char
@@ -52,9 +43,7 @@ class AmharicSegmenter:
         index += 1
         if len(word) > 0:
             start_position = index - len(word)
-            tokens.append(
-                Token(text=word, start_position=start_position, whitespace_after=False)
-            )
+            tokens.append(word)
         return tokens
     
     def find_all(self, punct, text):
