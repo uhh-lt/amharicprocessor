@@ -22,6 +22,7 @@ sentences = segmenter.t("እአበበ በሶ በላ። ከበደ ጆንያ፤ �
   Outputs
 
   > words = ['እአበበ', 'በሶ', 'በላ', '።']
+  >
   > sentences = ['እአበበ በሶ በላ።', 'ከበደ ጆንያ፤ ተሸከመ፡!', 'ለምን?']
 
   ## Romanization and Normalization
@@ -35,6 +36,7 @@ romanized = romanizer.romanize('ሑለት ሦስት')
 
 Outputs
 > normalized = 'ሁለት ሶስት'
+> 
 > romanized = 'ḥulat śosət'
 
 
