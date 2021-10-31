@@ -3,7 +3,7 @@
 This is a simple script that split an Amharic document into different sentences and tokenes.
 If you find an issue, please let us know in the GitHub [Issues](https://github.com/uhh-lt/amharicprocessor/issues)
 
-The Segmenter is part of the `[Semantic Models for Amharic](https://github.com/uhh-lt/amharicmodels/)` Project
+The Segmenter is part of the [`Semantic Models for Amharic`](https://github.com/uhh-lt/amharicmodels/) Project
  [![](https://github.com/uhh-lt/amharicmodels/raw/master/logo.png)](https://github.com/uhh-lt/amharicmodels/)
  
  # Usage
