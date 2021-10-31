@@ -4,7 +4,7 @@ This is a simple script that split an Amharic document into different sentences 
 If you find an issue, please let us know in the GitHub `issues`
 
 The Segmenter is part of the `Semantic Models for Amharic` Project
- [![](logo.png)](https://github.com/uhh-lt/amharicmodels/)
+ [![](https://github.com/uhh-lt/amharicmodels/raw/master/logo.png)](https://github.com/uhh-lt/amharicmodels/)
 
 # Announcements 
 
