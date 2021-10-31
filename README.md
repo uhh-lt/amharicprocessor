@@ -8,8 +8,23 @@ The Segmenter is part of the `Semantic Models for Amharic` Project
  
  # Usage
  * Install the segmenter: `pip install amseg`
- * Import the package in your project
- -  Segmenter imp
+ 
+ ## Tokenization and Segmentation
+  
+ ```from amseg.amharicSegmenter import AmharicSegmenter
+  sent_punct = []
+  word_punct = []
+  segmenter = AmharicSegmenter(sent_punct,word_punct)
+  words = segmenter.amharic_tokenizer("እአበበ በሶ በላ።")
+  sentences = segmenter.t("እአበበ በሶ በላ። ከበደ ጆንያ፤ ተሸከመ፡!ለምን?"))
+  ```
+
+  ## Romanization and Normalization
+
+  
+
+
+
 
 # Announcements 
 
