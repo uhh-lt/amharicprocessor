@@ -17,7 +17,7 @@ sent_punct = []
 word_punct = []
 segmenter = AmharicSegmenter(sent_punct,word_punct)
 words = segmenter.amharic_tokenizer("እአበበ በሶ በላ።")
-sentences = segmenter.t("እአበበ በሶ በላ። ከበደ ጆንያ፤ ተሸከመ፡!ለምን?"))
+sentences = segmenter.tokenize_sentence("እአበበ በሶ በላ። ከበደ ጆንያ፤ ተሸከመ፡!ለምን?"))
   ```
   Outputs
 
