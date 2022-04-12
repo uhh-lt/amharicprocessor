@@ -1,7 +1,7 @@
 #romanization
 class AmharicRomanizer:
     def romanize (norm):
-        norm = norm.replace("ሀ", "ha")
+        norm = norm.replace("ha", "ሀ")
         norm = norm.replace("ሁ", "hu")
         norm = norm.replace("ሂ", "hi")
         norm = norm.replace("ሃ", "hā")
