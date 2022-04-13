@@ -46,6 +46,18 @@ Outputs
     > normalized = 'ሁለት ሶስት' 
     > romanized = 'ḥulat śosət'
 
+Transliteration to Amharic Fidel
+---------------------------------
+The following code show cases how to transliterate a given latin script text to Amahric Fidel script text
+
+::
+
+    from amseg.amharicTranslitrator import AmharicTranslitrator as  transliterate
+    transliterated = transliterator.transliterate('misa belah')
+
+Outputs 
+    > transliterated = 'ምሳ በላህ' 
+
 Publications
 ------------
 

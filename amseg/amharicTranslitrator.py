@@ -1,6 +1,6 @@
 #romanization
-class AmharicRomanizer:
-    def romanize (norm):
+class AmharicTranslitrator:
+    def transliterate (norm):
         norm = norm.replace("hwa", "ኋ")
         norm = norm.replace("hua", "ኋ")
         norm = norm.replace("hie", "ሄ")
