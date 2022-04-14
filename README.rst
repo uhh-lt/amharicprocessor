@@ -56,7 +56,7 @@ The following code show cases how to transliterate a given latin script text to 
     transliterated = transliterator.transliterate('misa belah')
 
 Outputs 
-    > transliterated = 'ምሳ በላህ' 
+    > transliterated = 'ሚሳ በላህ' 
 
 Publications
 ------------
