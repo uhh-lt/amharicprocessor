@@ -52,11 +52,11 @@ The following code show cases how to transliterate a given latin script text to 
 
 ::
 
-    from amseg.amharicTranslitrator import AmharicTranslitrator as  transliterate
+    from amseg.amharicTranslitrator import AmharicTranslitrator as  transliterator
     transliterated = transliterator.transliterate('misa belah')
 
 Outputs 
-    > transliterated = 'ምሳ በላህ' 
+    > transliterated = 'ሚሳ በላህ' 
 
 Publications
 ------------
