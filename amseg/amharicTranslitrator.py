@@ -224,7 +224,7 @@ class AmharicTranslitrator:
         norm = norm.replace("cu", "ኩ")
         norm = norm.replace("c ", "ክ")
         norm = norm.replace(" gn ", "ግን")
-        norm = norm.replace("c", "ቸ")
+        norm = norm.replace("c", "ች")
         norm = norm.replace("xe", "ዘ")
         norm = norm.replace("xu", "ዙ")
         norm = norm.replace("xi", "ዚ")
