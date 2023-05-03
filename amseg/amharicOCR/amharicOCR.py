@@ -76,7 +76,7 @@ class AmharicOCR:
         extracted_text = ''
 
         # Loop through each page and extract text
-        for page in pages[:2]:
+        for page in pages:
             # Convert the image to grayscale
             gray_image = page.convert('L')
 
