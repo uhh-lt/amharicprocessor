@@ -15,7 +15,7 @@ To use the AmharicOCR class, create an instance of the class and pass the path t
 
 ```
 
-from AmharicOCR import AmharicOCR
+from amseg.amharicOCR import AmharicOCR
 
 ocr = AmharicOCR(file_path="path/to/pdf/files", save_files_path="path/to/save/files")
 ocr.run()
