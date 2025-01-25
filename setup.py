@@ -1,7 +1,12 @@
 from setuptools import setup, Extension
 def readme():
-    with open('README.rst') as f:
-        return f.read()
+    # Handle any potential errors gracefully
+    try:
+        with open('README.rst', encoding='utf-8') as f: # Specify UTF-8 encoding
+            return f.read()
+    except (FileNotFoundError, UnicodeDecodeError) as e:
+        print(f"Error reading file: {e}")
+        return None
 setup(
   name = 'amseg',         # Amharic Sentence segmentation, tokenization and normalization tools
   packages = ['amseg'],   # Chose the same as "name"
